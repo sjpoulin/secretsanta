@@ -1,0 +1,6 @@
+Flask Notes
+
+https://cs50.harvard.edu/x/2023/notes/9/
+https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application
+
+https://stackoverflow.com/questions/12480497/why-am-i-getting-error-for-apple-touch-icon-precomposed-png
