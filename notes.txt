@@ -8,3 +8,6 @@ Python Notes
 
 https://stackoverflow.com/questions/15512058/python-shuffle-such-that-position-will-never-repeat
 https://gradientdescending.com/secret-santa-list-using-python/
+
+Hexadecimal Color Wheel
+https://www.mathsisfun.com/numbers/color-wheel-interactive.html
