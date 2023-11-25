@@ -2,5 +2,18 @@
 
 
 {% block main %}
-    Main Content Goes Here
+    <h3>Add an entry</h3>
+    <form action="/" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <button type="submit">Add</button>
+    </form>
+    <table>
+        <tbody>
+            {% for name in names %}
+                <tr>
+                    <td>{{ name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

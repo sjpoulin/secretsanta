@@ -1,10 +1,17 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-@app.route("/")
+names = []
+
+@app.route("/", methods=["GET", "POST"])
 def index():
-    return render_template("index.html")
+    if request.method == "POST":
+        name = request.form.get("name")
+        names.append(name)
+        return redirect("/")
+    else:
+        return render_template("index.html", names=names)
 
 @app.route("/about")
 def about():
