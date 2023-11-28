@@ -12,9 +12,9 @@ def index():
         return redirect("/")
     else:
         return render_template("index.html", names=names)
-    
+
 @app.route("/sorted")
-def sort():
+def sorted():
     return render_template("sorted.html")
 
 
