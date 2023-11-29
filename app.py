@@ -13,6 +13,7 @@ def index():
     else:
         return render_template("index.html", names=names)
 
+# TODO: Update with functionality 
 @app.route("/sorted")
 def sorted():
     return render_template("sorted.html")

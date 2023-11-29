@@ -1,7 +1,3 @@
-TODO:
-Update icon
-Add python code to index
-
 Flask Notes
 
 https://cs50.harvard.edu/x/2023/notes/9/
