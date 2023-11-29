@@ -21,3 +21,8 @@ def sorted():
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+@app.route("/clear")
+def clear():
+    names.clear()
+    return render_template("clear.html")
