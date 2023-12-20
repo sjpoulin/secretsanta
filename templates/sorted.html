@@ -2,7 +2,26 @@
 
 {% block main %}
 
-Sorted content goes here!
+<!-- Table to list inputted names -->
+<table>
+    <tbody>
+        {% for name in names %}
+            <tr>
+                <td>{{ name }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        {% for name in new_names %}
+            <tr>
+                <td>{{ name }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 {% endblock %}
 

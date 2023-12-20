@@ -26,7 +26,9 @@ def sorted():
 def about():
     return render_template("about.html")
 
+# Clear names lists and displays confirmation
 @app.route("/clear")
 def clear():
     names.clear()
+    new_names.clear()
     return render_template("clear.html")
