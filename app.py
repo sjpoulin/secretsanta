@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect
+from helpers import shuffle_list
 
 app = Flask(__name__)
 
 names = []
+new_names = []
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -16,7 +18,8 @@ def index():
 # TODO: Update with functionality 
 @app.route("/sorted")
 def sorted():
-    return render_template("sorted.html")
+    new_names = shuffle_list(names)
+    return render_template("sorted.html", names=names, new_names=new_names)
 
 
 @app.route("/about")
