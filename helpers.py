@@ -1,6 +1,6 @@
 import random
 
-# Credit: https://stackoverflow.com/questions/15512058/python-shuffle-such-that-position-will-never-repeat
+# Credit for shuffle function: http://tinyurl.com/mrspwsx7 
 
 def shuffle_list(some_list):
     randomized_list = some_list[:]
