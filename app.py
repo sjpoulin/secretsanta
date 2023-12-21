@@ -15,7 +15,6 @@ def index():
     else:
         return render_template("index.html", names=names)
 
-# TODO: Update with functionality 
 @app.route("/sorted")
 def sorted():
     new_names = shuffle_list(names)

@@ -6,7 +6,12 @@ body {
 
 .column {
     float: left;
-    width: 50%;
+    width: 25%;
+    padding: 15px;
+}
+
+.buttons {
+    float: left;
     padding: 5px;
 }
 
