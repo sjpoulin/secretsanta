@@ -9,15 +9,17 @@
     </form>
 
     <!-- Table to list inputted names -->
-    <table>
-        <tbody>
-            {% for name in names %}
-                <tr>
-                    <td>{{ name }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div>
+        <table>
+            <tbody>
+                {% for name in names %}
+                    <tr>
+                        <td>{{ name }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
     <!-- Sort form -->
     <form method="get">

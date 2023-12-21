@@ -4,6 +4,12 @@ body {
     background-color: #96ffac;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
 .imglink {
     width: 36px;
     height: 36px;

@@ -3,25 +3,31 @@
 {% block main %}
 
 <!-- Table to list inputted names -->
-<table>
-    <tbody>
-        {% for name in names %}
-            <tr>
-                <td>{{ name }}</td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div class="column">
+    <table>
+        <tbody>
+            {% for name in names %}
+                <tr>
+                    <td>{{ name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
-<table>
-    <tbody>
-        {% for name in new_names %}
-            <tr>
-                <td>{{ name }}</td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+</div>
+
+<div class="column">
+    <table>
+        <tbody>
+            {% for name in new_names %}
+                <tr>
+                    <td>{{ name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
 
 {% endblock %}
 
