@@ -15,12 +15,18 @@ def index():
     else:
         return render_template("index.html", names=names)
 
+# Sorts names with helper function and routes to page matching givers and recipients
+## Route to error page if there are zero or one names inputted
 @app.route("/sorted")
 def sorted():
     new_names = shuffle_list(names)
-    return render_template("sorted.html", names=names, new_names=new_names)
+    if len(new_names) < 2:
+        return render_template("error.html")
+    else:
+        return render_template("sorted.html", names=names, new_names=new_names)
 
 
+# Routes to about page
 @app.route("/about")
 def about():
     return render_template("about.html")

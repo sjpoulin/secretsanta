@@ -19,6 +19,15 @@ body {
     margin: 6px 12px;
 }
 
+.santa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    margin: 12px 12px;
+}
+
 /* credit for fixed footer dimensions: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
 .footer {
     position: fixed;
