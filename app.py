@@ -20,7 +20,7 @@ def index():
 @app.route("/sorted")
 def sorted():
     new_names = shuffle_list(names)
-    if len(new_names) < 2:
+    if len(names) < 2:
         return render_template("error.html")
     else:
         return render_template("sorted.html", names=names, new_names=new_names)
