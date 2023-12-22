@@ -6,6 +6,9 @@
 <div class="column">
     <table>
         <tbody>
+            <tr>
+                <h5>Giver</h5>
+            </tr>
             {% for name in names %}
                 <tr>
                     <td>{{ name }}</td>
@@ -19,6 +22,9 @@
 <div class="column">
     <table>
         <tbody>
+            <tr>
+                <h5>Recipient</h5>
+            </tr>
             {% for name in new_names %}
                 <tr>
                     <td>{{ name }}</td>
@@ -26,6 +32,22 @@
             {% endfor %}
         </tbody>
     </table>
+</div>
+
+<div class="buttons">
+    <!-- Returns home -->
+    <a href="/" class="btn btn-danger" role="button">Add More</a>
+</div>
+
+<div class="buttons">
+    <form method="get">
+        <a href="/sorted" class="btn btn-danger" role="button">Sort Again</a>
+    </form>
+</div>
+
+<div class="buttons">
+    <!-- Clears names list in app and routes to confirmation page -->
+    <a href="/clear" class="btn btn-danger" role="button">Clear</a>
 </div>
 
 
