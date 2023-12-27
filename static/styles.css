@@ -16,9 +16,18 @@ body {
     margin-right: auto;
 }
 
+#entries th {
+    text-decoration-line: underline;
+    font-weight: bold;
+    padding: 6px;
+}
 #entries td {
     font-weight: bold;
     padding: 6px;
+}
+
+.right_align {
+    text-align: end;
 }
 
 .imglink {

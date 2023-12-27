@@ -3,17 +3,17 @@
 {% block main %}
 
 <!-- Table to list inputted names -->
-    <div class="sorted">
-        <table>
+    <div>
+        <table id="entries">
             <tbody>
                 <tr>
-                    <td>Giver</td>
-                    <td>Recipient</td>
+                    <th>Giver</th>
+                    <th>Recipient</th>
                 </tr>
                 {% for giver, recipient in pairs %}
                     <tr>
                         <td>{{ giver }}</td>
-                        <td>{{ recipient }}</td>
+                        <td class="right_align">{{ recipient }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
