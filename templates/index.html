@@ -2,15 +2,15 @@
 
 
 {% block main %}
-    <h5>Add an entry</h5>
-    <form action="/" method="post">
+    <h5 class="header">Add an entry</h5>
+    <form action="/" method="post" class="entry">
         <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
         <button type="submit">Add</button>
     </form>
 
     <!-- Table to list inputted names -->
     <div>
-        <table>
+        <table class="entries">
             <tbody>
                 {% for name in names %}
                     <tr>

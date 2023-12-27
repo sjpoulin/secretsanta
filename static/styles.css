@@ -8,6 +8,20 @@ body {
     padding: 15px;
 }
 
+.header {
+    padding: 10px;
+    text-align: center;
+}
+
+.entry {
+    text-align: center;
+}
+
+.entries {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 .imglink {
     width: 36px;
     height: 36px;
@@ -18,9 +32,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
-    width: 300px;
-    margin: 12px 12px;
+    width: 25%;
 }
 
 /* credit for fixed footer dimensions: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
