@@ -23,7 +23,7 @@ def sorted():
     if len(names) < 2:
         return render_template("error.html")
     else:
-        return render_template("sorted.html", names=names, new_names=new_names)
+        return render_template("sorted.html", pairs=zip(names, new_names))
 
 
 # Routes to about page

@@ -3,35 +3,22 @@
 {% block main %}
 
 <!-- Table to list inputted names -->
-    <div class="column">
+    <div class="sorted">
         <table>
             <tbody>
                 <tr>
-                    <h5>Giver</h5>
+                    <td>Giver</td>
+                    <td>Recipient</td>
                 </tr>
-                {% for name in names %}
+                {% for giver, recipient in pairs %}
                     <tr>
-                        <td>{{ name }}</td>
+                        <td>{{ giver }}</td>
+                        <td>{{ recipient }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
     
-    </div>
-    
-    <div class="column">
-        <table>
-            <tbody>
-                <tr>
-                    <h5>Recipient</h5>
-                </tr>
-                {% for name in new_names %}
-                    <tr>
-                        <td>{{ name }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
     </div>
 
 {% endblock %}
