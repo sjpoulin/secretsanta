@@ -37,5 +37,17 @@
 {% endblock %}
 
 {% block foot %}
-    <p>2023 Spencer Poulin</p>
+
+     <!-- Sort form -->
+     <div class="footer">
+        <form method="get">
+            <a href="/sorted" class="btn btn-danger" role="button">Sort!</a>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <!-- Clears names list in app and routes to confirmation page -->
+        <a href="/clear" class="btn btn-danger" role="button">Clear</a>
+    </div>
+
 {% endblock %}

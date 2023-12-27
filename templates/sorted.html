@@ -54,6 +54,22 @@
 {% endblock %}
 
 {% block foot %}
-    <p>2023 Spencer Poulin</p>
+
+    <div class="buttons footer">
+        <!-- Returns home -->
+        <a href="/" class="btn btn-danger" role="button">Add More</a>
+    </div>
+
+    <div class="buttons footer">
+        <form method="get">
+            <a href="/sorted" class="btn btn-danger" role="button">Sort Again</a>
+        </form>
+    </div>
+
+    <div class="buttons footer">
+        <!-- Clears names list in app and routes to confirmation page -->
+        <a href="/clear" class="btn btn-danger" role="button">Clear</a>
+    </div>
+
 {% endblock %}
 
