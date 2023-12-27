@@ -17,9 +17,14 @@ body {
     text-align: center;
 }
 
-.entries {
+#entries {
     margin-left: auto; 
     margin-right: auto;
+}
+
+#entries td {
+    font-weight: bold;
+    padding: 6px;
 }
 
 .imglink {
