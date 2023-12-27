@@ -3,36 +3,36 @@
 {% block main %}
 
 <!-- Table to list inputted names -->
-<div class="column">
-    <table>
-        <tbody>
-            <tr>
-                <h5>Giver</h5>
-            </tr>
-            {% for name in names %}
+    <div class="column">
+        <table>
+            <tbody>
                 <tr>
-                    <td>{{ name }}</td>
+                    <h5>Giver</h5>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-
-</div>
-
-<div class="column">
-    <table>
-        <tbody>
-            <tr>
-                <h5>Recipient</h5>
-            </tr>
-            {% for name in new_names %}
+                {% for name in names %}
+                    <tr>
+                        <td>{{ name }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    
+    </div>
+    
+    <div class="column">
+        <table>
+            <tbody>
                 <tr>
-                    <td>{{ name }}</td>
+                    <h5>Recipient</h5>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+                {% for name in new_names %}
+                    <tr>
+                        <td>{{ name }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
 {% endblock %}
 
