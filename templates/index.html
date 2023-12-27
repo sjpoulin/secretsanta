@@ -21,33 +21,25 @@
         </table>
     </div>
 
-    <!-- Sort form -->
-    <div class="buttons">
-        <form method="get">
-            <a href="/sorted" class="btn btn-danger" role="button">Sort!</a>
-        </form>
-    </div>
-    
-    <div class="buttons">
-        <!-- Clears names list in app and routes to confirmation page -->
-        <a href="/clear" class="btn btn-danger" role="button">Clear</a>
-    </div>
-    
-
 {% endblock %}
 
 {% block foot %}
 
-     <!-- Sort form -->
-     <div class="footer">
-        <form method="get">
-            <a href="/sorted" class="btn btn-danger" role="button">Sort!</a>
-        </form>
-    </div>
-    
-    <div class="footer">
-        <!-- Clears names list in app and routes to confirmation page -->
-        <a href="/clear" class="btn btn-danger" role="button">Clear</a>
+    <div>
+        <table class="buttons">
+            <tr>
+                <td>
+                    <!-- Sort form -->
+                    <form method="get">
+                        <a href="/sorted" class="btn btn-danger" role="button">Sort!</a>
+                    </form>
+                </td>
+                <td>
+                     <!-- Clears names list in app and routes to confirmation page -->
+                    <a href="/clear" class="btn btn-danger" role="button">Clear</a>
+                </td>
+            </tr>
+        </table>
     </div>
 
 {% endblock %}

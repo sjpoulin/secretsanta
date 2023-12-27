@@ -8,10 +8,6 @@ body {
     padding: 15px;
 }
 
-.buttons {
-    padding: 5px;
-}
-
 .imglink {
     width: 36px;
     height: 36px;
@@ -34,4 +30,9 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.buttons {
+    margin-left: auto; 
+    margin-right: auto;
 }
