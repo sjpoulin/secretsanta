@@ -8,7 +8,7 @@
             <tbody>
                 <tr>
                     <th>Giver</th>
-                    <th>Recipient</th>
+                    <th class="right_align">Recipient</th>
                 </tr>
                 {% for giver, recipient in pairs %}
                     <tr>
@@ -29,6 +29,10 @@
         <table class="buttons">
             <tr>
                 <td>
+                    <!-- Exports to PDF -->
+                    <button type="button" class="btn btn-danger" onclick="toExport()">PDF</button>
+                </td>
+                <td>
                     <!-- Returns home -->
                     <a href="/" class="btn btn-danger" role="button">Add More</a>
                 </td>
@@ -44,6 +48,21 @@
             </tr>
         </table>
     </div>
-
+    <script type="text/javascript">
+        function toExport() {
+        
+        // Credit for function: http://tinyurl.com/4uaprt8d
+        var element = document.getElementById('entries');
+        var opt = {
+            margin:       0.5,
+            filename:     'secretsanta.pdf',
+            image:        { type: 'jpeg', quality: 1 },
+            html2canvas:  { scale: 1 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait',precision: '12' }
+          };
+        
+        html2pdf().set(opt).from(element).save();
+      }
+    </script>
 {% endblock %}
 

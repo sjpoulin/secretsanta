@@ -42,6 +42,7 @@ Clear - All submitted names are cleared so the user can start over.
 
 #### Other Credits:
 - Shuffle function created with help from [Stack Overflow](http://tinyurl.com/mrspwsx7)
+- PDF function created with help from [Byte Blogger](http://tinyurl.com/4uaprt8d)
 - Link images courtesy of [Free Logo Vectors](www.freelogovectors.net)
 - Santa image: "Santa claus sitting beside lit tree photo" by Tim Mossholder via [Unsplash](https://unsplash.com/photos/santa-claus-sitting-beside-lit-tree-egV4ig2ZhpA)
 - Santa image: "santa and his sleigh being pulled over by police on a snowy road", generated with Bing AI Image Generator
