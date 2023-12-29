@@ -10,7 +10,7 @@ new_names = []
 def index():
     if request.method == "POST":
         name = request.form.get("name")
-        names.append(name)
+        names.append(name.strip())
         return redirect("/")
     else:
         return render_template("index.html", names=names)
