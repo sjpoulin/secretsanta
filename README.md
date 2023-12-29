@@ -1,6 +1,6 @@
 # Secret Santa Sorter
 
-### TODO Video Demo:
+### Video Demo:
 [YouTube](https://youtu.be/OmyWezaFkIM)
 
 ### Description:
