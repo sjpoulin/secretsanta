@@ -1,4 +1,4 @@
-# Screen Time CLI Log
+# Secret Santa Sorter
 
 ### TODO Video Demo:
 YouTube Link Here
@@ -39,6 +39,8 @@ Clear - All submitted names are cleared so the user can start over.
 #### Libraries Used:
 [Bootstrap](www.getbootstrap.com)
 [Flask](www.flask.palletsprojects.com)
+[jsPDF](https://parall.ax/products/jspdf)
+[html2PDF](https://html2pdf.com)
 
 #### Other Credits:
 - Shuffle function created with help from [Stack Overflow](http://tinyurl.com/mrspwsx7)
