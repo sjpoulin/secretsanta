@@ -8,11 +8,13 @@
             <tbody>
                 <tr>
                     <th>Giver</th>
+                    <th></th>
                     <th class="right_align">Recipient</th>
                 </tr>
                 {% for giver, recipient in pairs %}
                     <tr>
                         <td>{{ giver }}</td>
+                        <td class="gives_to">gives to</td>
                         <td class="right_align">{{ recipient }}</td>
                     </tr>
                 {% endfor %}

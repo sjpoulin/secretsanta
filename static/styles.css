@@ -26,6 +26,10 @@ body {
     padding: 6px;
 }
 
+.gives_to {
+    font-size: smaller;
+}
+
 .right_align {
     text-align: end;
 }
