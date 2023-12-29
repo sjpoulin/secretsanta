@@ -31,8 +31,17 @@ flask run
 
 From the home screen, the user can input names via the submit form on the home page. Two or more names are required for sorting, or else the web app will route to an error page.
 
-Sort! - The web app sorts the listed names and routes to a page that matches the list of givers with a list of recipients.
+The user has these options from the home screen:
+
+Sort! - The web app sorts the listed names and routes to a page that matches the list of givers with a list of recipients. 
 Clear - All submitted names are cleared so the user can start over.
+
+Once the user sorts their entries and is routed to sorted.html, they are presented with more options:
+
+PDF - The user can download a simple PDF of their givers and recipients to be printed, emailed, etc. The export function uses jsPDF and html2PDF as CDN libraries to export user data.
+Add More - The user can go back to the home screen to add more names. Previously added entries are retained upon routing to the home page.
+The user can also clear submitted names from the sorted page. 
+
 
 ### Credits:
 
